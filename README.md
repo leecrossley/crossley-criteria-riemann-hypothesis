@@ -1,5 +1,7 @@
 # The Crossley Criteria
 
+[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24466907.svg)](https://doi.org/10.5281/zenodo.24466907)
+
 *A Mathematical Proof of the Riemann Hypothesis, Verified in Lean*
 
 [Read the paper (PDF, 20 pages)](paper/crossley-criteria-riemann-hypothesis.pdf) | [Markdown version](paper/crossley-criteria-riemann-hypothesis.md)
