@@ -1,0 +1,33 @@
+# Steps 2 and 3 of the proof: the Landau window theorem for zeta and the reflection step.
+# Every module imports only Mathlib and other modules in this folder.
+# Each module is listed in roots, because Lake builds only the modules a library lists.
+name = "crossley-rh-landau"
+defaultTargets = ["Landau"]
+
+[leanOptions]
+maxHeartbeats = 6000000
+maxRecDepth = 100000
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[lean_lib]]
+name = "Landau"
+srcDir = "src"
+roots = [
+  "IndependentLandau.Analytic",
+  "IndependentLandau.Defs",
+  "IndependentLandau.Elementary",
+  "IndependentLandau.Kernel",
+  "IndependentLandau.Laplace",
+  "IndependentLandau.Poles",
+  "IndependentLandau.Ramp",
+  "IndependentLandau.Series",
+  "IndependentLandau.WindowCoefficients",
+  "IndependentLandau.WindowLemma",
+  "IndependentLandau.Zeta",
+  "IndependentLandau.ZetaWindow",
+  "Reflection",
+]

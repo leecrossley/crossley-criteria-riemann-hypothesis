@@ -1,0 +1,30 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "compiler_flags": [
+    "--trust=0",
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "source_sha256": "8cb758b3b2d471ea888f15d464ed6c5ed9670ad532da3164535382a3ec93bd4d",
+  "object_sha256": "8ec061202e7314b78dd51e4f916023fcc53dddbf091bec6fb31d27c608af432a",
+  "parents_sha256": {
+    "ThetaDirectResult": "cd684b2ee73fa2e6e6d18377082183760b1a18105200c8d924ff2d7ab48b13f1",
+    "FixedLossShellBridge": "4449e0611bfc63a740c5f39b4dea9f9ad6d5ec1fe424042ac7d3603a8957ed27",
+    "SingleHostPrincipalWindow": "97bcea8e8909634120f95763c7057cee67b69ec4d28693034e11c2fa7628b2ef",
+    "ReverseSizeWindow": "2e68a276fd6f991cd67d8809471f8c80cadc1bc3c1c4fdd02e0cdd14d187d3db",
+    "PureArithmeticCancellation.FixedLossThetaConversion": "77d7ede4f06831abe0452ceb3bc54b016edfa2af425267685ea6e01817a682ad",
+    "Reflection": "0845707a3fc5fd86f67c13bd2dd42c8b4bc6638295b22ecdba816a70e8d9d7f9"
+  },
+  "axiom_output": [
+    "'ConvertedThetaWindows.principal_window' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.principal_window_87' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.numerical_design' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.zero_free_349_400' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.full_shell_298' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.ordinary_rh' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "kernel_replay": "stock LeanChecker.replayFromImports accepted ConvertedThetaWindows"
+}

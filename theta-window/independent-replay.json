@@ -1,0 +1,20 @@
+{
+  "kernel_replay": "stock LeanChecker.replayFromImports accepted ConvertedThetaWindows",
+  "source_sha256": "8cb758b3b2d471ea888f15d464ed6c5ed9670ad532da3164535382a3ec93bd4d",
+  "object_sha256": "8ec061202e7314b78dd51e4f916023fcc53dddbf091bec6fb31d27c608af432a",
+  "archived_object_sha256": "8ec061202e7314b78dd51e4f916023fcc53dddbf091bec6fb31d27c608af432a",
+  "different_parents": {
+    "PureArithmeticCancellation.FixedLossThetaConversion": {
+      "archived": "77d7ede4f06831abe0452ceb3bc54b016edfa2af425267685ea6e01817a682ad",
+      "fresh": "1fdbb45a7fae348f756812f2e7e269d0a8c00f204db82a9c57ba00afe88460b5"
+    }
+  },
+  "axiom_output": [
+    "'ConvertedThetaWindows.principal_window' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.principal_window_87' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.numerical_design' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.zero_free_349_400' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.full_shell_298' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ConvertedThetaWindows.ordinary_rh' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}

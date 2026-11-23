@@ -1,0 +1,14 @@
+Crossley.WindowCriterion, compiled after the one-unit build of the tree
+23rd November 2026, Lean 4.33.1, Mathlib 0df444a360eaa60ab8c11dca51a86af692955474
+
+Search path: the output directory of the one-unit build (190 modules, finished 05:28:53 UTC), then Mathlib.
+Compile flags, as in tools/build.py for project modules: --trust=0 --tstack=400000 -j1 -DwarningAsError=true -DmaxRecDepth=100000 -DmaxHeartbeats=6000000
+
+05:35:57 compile src/Crossley/WindowCriterion.lean
+'Crossley.window_criterion_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Crossley.window_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+compile exit 0
+leanchecker -v Crossley.WindowCriterion
+replaying Crossley.WindowCriterion
+leanchecker exit 0
+05:36:19 done

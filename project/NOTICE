@@ -1,0 +1,56 @@
+NOTICE
+======
+
+This Lean 4 project includes third-party source modules and imports external
+libraries licensed under the Apache License, Version 2.0 (see
+LICENSE-APACHE-2.0 in this directory). The notices below are provided in
+accordance with Sections 4(a), 4(b), 4(c), and 4(d) of that licence.
+
+------------------------------------------------------------------------------
+1. RiemannGaussian (dbsanfte/RiemannGaussian) — David B. Sanftenberg
+------------------------------------------------------------------------------
+* Upstream repository: https://github.com/dbsanfte/RiemannGaussian
+* Copyright:           Copyright (c) David B. Sanftenberg.
+* Licence:             Apache License, Version 2.0 (LICENSE-APACHE-2.0)
+* Unmodified files in src/:
+  - src/RiemannGaussian/AlpogeZetaSampleBounds.lean
+  - src/RiemannGaussian/AlpogeZetaShortIntervals.lean
+* Modified files in src/ (Apache License, Version 2.0, Section 4(b)):
+  - src/CheckAlpogeFixedPrimeBand.lean: replaced the external proof-archive
+    imports and the CharFamily / Formalism.VW wrappers with
+    `import Compat.LandauBridge` and `ZetaShared.rampG`,
+    `IndependentLandau.rampS`, `ZetaShared.zetaLogRamp`,
+    `ZetaShared.zeta_poleData`, `ZetaShared.zetaZeros_strip`, and
+    `ZetaShared.Reflection.rh_of_right`, and added a top-of-file modification
+    notice.
+  - src/CheckAlpogeFixedPrimeBandMobius.lean (from RiemannGaussian f04c60e,
+    scripts/CheckAlpogeFixedPrimeBandMobius.lean): replaced
+    `Formalism.VW.rh_of_right` with `ZetaShared.Reflection.rh_of_right` and
+    `ite_eq_left h` with `if_pos h`, and added a top-of-file modification
+    notice.
+  - src/CheckAlpogeFixedPrimeBandCentered.lean (from RiemannGaussian f04c60e,
+    scripts/CheckAlpogeFixedPrimeBandCentered.lean): extended with new lemmas,
+    starting with `fixedBandLattice_moebius_zero`, reworked several proofs,
+    and added a top-of-file modification notice.
+
+------------------------------------------------------------------------------
+2. Mathlib (leanprover-community/mathlib4)
+------------------------------------------------------------------------------
+* Upstream repository: https://github.com/leanprover-community/mathlib4
+* Pinned revision:     0df444a360eaa60ab8c11dca51a86af692955474
+                       (Lean v4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6)
+* Copyright:           Copyright (c) 2017-2026 The mathlib4 Community.
+* Licence:             Apache License, Version 2.0 (LICENSE-APACHE-2.0)
+* Usage:               Imported without modification as the external library
+                       of this project. No Mathlib source files are
+                       redistributed in src/.
+
+------------------------------------------------------------------------------
+3. First-Party Apache-2.0 Module and External Citations
+------------------------------------------------------------------------------
+* src/ZeroFreeToMertens.lean is a first-party Mathlib-only module in this
+  project released under the Apache License, Version 2.0 (LICENSE-APACHE-2.0).
+* Other external works cited in ../CREDITS.md and ../REFERENCES.md (including
+  GTimG/QuasiRiemannTracker by Joseph Bebel, OVVO-Financial/square-block-mobius,
+  openai/math, leanprover-community/riemann-hypothesis, and
+  michael-haufschild-gib/hgt) have no source files redistributed in src/.

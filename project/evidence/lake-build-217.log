@@ -1,0 +1,593 @@
+Source commit 70891d1356c42cfdd138df9690fed31f379efb88
+Command: lake build (Lean 4.33.1, project directory)
+The isolated build started from the earlier 215-module Lake cache.
+Raw output SHA-256: bdf3431040bec2b24b35c2cf6f42313880b20068a659ae8e8f0c37b6defd5f7e
+Trailing spaces from compiler suggestions have been trimmed below.
+
+2026-11-23T09:25:25.574761+00:00
+ℹ [8707/8923] Replayed Reflection
+info: src/Reflection.lean:30:0: 'RiemannReduction.rh_of_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8711/8923] Replayed TentZeroBudget
+info: src/TentZeroBudget.lean:95:0: 'TentZeroBudget.companionRe_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentZeroBudget.lean:96:0: 'TentZeroBudget.height_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8712/8923] Replayed TentWidthTwoMargin
+info: src/TentWidthTwoMargin.lean:1057:0: 'TentWidthTwoMargin.tentDephased_eq_mul_tentKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1058:0: 'TentWidthTwoMargin.tentDephased_re_eq_companionRe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1059:0: 'TentWidthTwoMargin.tentDephased_criticalLine_eq_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1060:0: 'TentWidthTwoMargin.tentKernel_criticalLine_norm_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1061:0: 'TentWidthTwoMargin.tentDephased_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1062:0: 'TentWidthTwoMargin.criticalLine_tent_sum_le_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1063:0: 'TentWidthTwoMargin.criticalLine_tent_sum_eq_cap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1064:0: 'TentWidthTwoMargin.rampTwoSeries_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1065:0: 'TentWidthTwoMargin.widthTwoCap_eq_from_rampTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1066:0: 'TentWidthTwoMargin.eulerMascheroniConstant_bounds_d17' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1067:0: 'TentWidthTwoMargin.widthTwoMargin_bounds_d14' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1068:0: 'TentWidthTwoMargin.widthTwoMargin_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1069:0: 'TentWidthTwoMargin.widthTwoMargin_gt_ladyElinor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWidthTwoMargin.lean:1070:0: 'TentWidthTwoMargin.widthTwo_postCriticalLine_margin_unconditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8713/8923] Replayed TentComplex
+info: src/TentComplex.lean:50:0: 'TentZeroBudget.companion_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentComplex.lean:51:0: 'TentZeroBudget.companion_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentComplex.lean:139:0: 'TentZeroBudget.dephase_tent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentComplex.lean:140:0: 'TentZeroBudget.companion_on_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentComplex.lean:141:0: 'TentZeroBudget.line_mass_bound_and_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8715/8923] Replayed ThirdQuotient
+info: src/ThirdQuotient.lean:191:0: 'RiemannReduction.ThirdQuotient.third_tail_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8720/8923] Replayed IndependentLandau.Zeta
+info: src/IndependentLandau/Zeta.lean:38:0: 'IndependentLandau.zeta_poleData' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8723/8923] Replayed IndependentLandau.Kernel
+warning: src/IndependentLandau/Kernel.lean:35:15: Variable name `hσ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hσ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [8726/8923] Replayed IndependentLandau.WindowLemma
+info: src/IndependentLandau/WindowLemma.lean:212:0: 'IndependentLandau.landau_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/IndependentLandau/WindowLemma.lean:213:0: @IndependentLandau.landau_window : ∀ {g : ℝ → ℝ} {Φ : ℂ → ℂ} {Z : Set ℂ},
+  IndependentLandau.PoleData g Φ Z →
+    ∀ {θ δ : ℝ}, 0 < θ → θ < 1 → 0 < δ → IndependentLandau.WindowHypU g θ δ → ∀ ρ ∈ Z, ρ.re ≤ θ
+ℹ [8727/8923] Replayed IndependentLandau.ZetaWindow
+info: src/IndependentLandau/ZetaWindow.lean:20:0: 'IndependentLandau.zeta_zeroFree_of_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8728/8923] Replayed Crossley.RealZeros
+info: src/Crossley/RealZeros.lean:159:0: 'Crossley.riemannZeta_ne_zero_of_mem_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8730/8923] Replayed CheckAlpogeFixedPrimeBand
+info: src/CheckAlpogeFixedPrimeBand.lean:773:4: Try this:
+  [apply] ring_nf
+
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: src/CheckAlpogeFixedPrimeBand.lean:819:4: Try this:
+  [apply] ring_nf
+
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [8733/8923] Replayed CheckAlpogeFixedPrimeBandFirstQuotient
+info: src/CheckAlpogeFixedPrimeBandFirstQuotient.lean:510:0: Half-tail implication uses 10518 Lean modules including this module.
+ℹ [8734/8923] Replayed ThirdQuotientBridge
+info: src/ThirdQuotientBridge.lean:108:0: RiemannReduction.ThirdBridge.half_third_error uses [propext, Classical.choice, Quot.sound]
+info: src/ThirdQuotientBridge.lean:108:0: RiemannReduction.ThirdBridge.half_third_mass uses [propext, Classical.choice, Quot.sound]
+info: src/ThirdQuotientBridge.lean:108:0: RiemannReduction.ThirdBridge.half_iff_third_log uses [propext, Classical.choice, Quot.sound]
+info: src/ThirdQuotientBridge.lean:108:0: RiemannReduction.ThirdBridge.rh_of_third_mass_log uses [propext, Classical.choice, Quot.sound]
+⚠ [8735/8923] Replayed PrimeBand
+warning: src/PrimeBand.lean:16:23: this parameter is redundant, environment already contains `max_def` annotated with `@[grind =]`
+warning: src/PrimeBand.lean:16:23: this parameter is redundant, environment already contains `max_def` annotated with `@[grind =]`
+warning: src/PrimeBand.lean:16:23: this parameter is redundant, environment already contains `max_def` annotated with `@[grind =]`
+warning: src/PrimeBand.lean:16:23: this parameter is redundant, environment already contains `max_def` annotated with `@[grind =]`
+ℹ [8736/8923] Replayed DivisorBand
+info: src/DivisorBand.lean:126:0: 'RiemannReduction.DivisorBand.divisor_band_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/DivisorBand.lean:127:0: 'RiemannReduction.DivisorBand.moebius_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8743/8923] Replayed ZetaCount.Final
+info: src/ZetaCount/Final.lean:107:0: 'ZetaCount.zeroCountStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8745/8923] Replayed ZetaWindowMass
+info: src/ZetaWindowMass.lean:128:0: 'RiemannReduction.ZetaWindow.finite_inverse_square_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8750/8923] Replayed ZetaPerron.Final
+info: src/ZetaPerron/Final.lean:49:0: 'ZetaPerron.perron_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaPerron/Final.lean:50:0: 'ZetaPerron.perronStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8755/8923] Replayed ZetaStrip.Final
+info: src/ZetaStrip/Final.lean:334:0: 'ZetaStrip.stripLogDerivStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8756/8923] Replayed ZetaExplicit.Rect
+info: src/ZetaExplicit/Rect.lean:267:0: 'ZetaExplicit.rectInt_inv_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/Rect.lean:268:0: 'ZetaExplicit.rectInt_eq_sum_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8757/8923] Replayed ZetaExplicit.LogDeriv
+info: src/ZetaExplicit/LogDeriv.lean:147:0: 'ZetaExplicit.exists_bound_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/LogDeriv.lean:148:0: 'ZetaExplicit.norm_logDeriv_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/LogDeriv.lean:149:0: 'ZetaExplicit.logDeriv_zeta_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8758/8923] Replayed ZetaExplicit.Factor
+info: src/ZetaExplicit/Factor.lean:91:0: 'ZetaExplicit.exists_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/Factor.lean:92:0: 'ZetaExplicit.logDeriv_of_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8759/8923] Replayed ZetaExplicit.Residue
+info: src/ZetaExplicit/Residue.lean:187:0: 'ZetaExplicit.residue_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8760/8923] Replayed ZetaExplicit.Sides
+info: src/ZetaExplicit/Sides.lean:253:0: 'ZetaExplicit.horiz_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/Sides.lean:254:0: 'ZetaExplicit.left_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/Sides.lean:255:0: 'ZetaExplicit.right_piece' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8761/8923] Replayed ZetaExplicit.Height
+info: src/ZetaExplicit/Height.lean:98:0: 'ZetaExplicit.height_change' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8762/8923] Replayed ZetaExplicit.Final
+info: src/ZetaExplicit/Final.lean:207:0: ZetaExplicit.explicitFormula_of : ZetaShared.PerronStatement →
+  ZetaShared.StripLogDerivStatement → ZetaShared.ZeroCountStatement → ZetaShared.ExplicitFormulaStatement
+info: src/ZetaExplicit/Final.lean:208:0: 'ZetaExplicit.explicitFormula_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaExplicit/Final.lean:209:0: 'ZetaExplicit.explicitFormula_of_perron_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8763/8923] Replayed ZetaClassical.Explicit
+info: src/ZetaClassical/Explicit.lean:14:0: 'ZetaClassical.explicitFormulaStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8765/8923] Replayed CommonZeroTruncation
+info: src/CommonZeroTruncation.lean:63:0: 'RiemannReduction.ZetaWindow.common_zero_truncation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8766/8923] Replayed VStripEstimate
+info: src/VStripEstimate.lean:156:0: 'RiemannReduction.ZetaWindow.truncated_reciprocal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/VStripEstimate.lean:157:0: 'RiemannReduction.ZetaWindow.psi_error_of_strip_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8768/8923] Replayed MobiusRamps
+info: src/MobiusRamps.lean:38:0: 'RiemannReduction.DivisorBand.centered_ramps_eq_moebius' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusRamps.lean:39:0: 'RiemannReduction.DivisorBand.sum_dyadic_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8769/8923] Replayed ZetaRegion.Local
+info: src/ZetaRegion/Local.lean:273:0: 'ZetaRegion.norm_logDeriv_le_of_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaRegion/Local.lean:274:0: 'ZetaRegion.re_logDeriv_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaRegion/Local.lean:275:0: 'ZetaRegion.re_logDeriv_ge_of_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8770/8923] Replayed ZetaRegion.ZetaBounds
+info: src/ZetaRegion/ZetaBounds.lean:202:0: 'ZetaRegion.norm_zeta₁_le_of_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaRegion/ZetaBounds.lean:203:0: 'ZetaRegion.le_norm_zeta₁' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaRegion/ZetaBounds.lean:204:0: 'ZetaRegion.exists_logDeriv_real_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8771/8923] Replayed ZetaRegion.ThreeFourOne
+info: src/ZetaRegion/ThreeFourOne.lean:74:0: 'ZetaRegion.three_four_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8772/8923] Replayed ZetaRegion.Region
+info: src/ZetaRegion/Region.lean:327:0: 'ZetaRegion.exists_zero_free_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaRegion/Region.lean:328:0: 'ZetaRegion.exists_zero_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8773/8923] Replayed ZetaRegion.Main
+info: src/ZetaRegion/Main.lean:137:0: 'ZetaRegion.norm_logDeriv_zeta_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ZetaRegion/Main.lean:138:0: 'ZetaRegion.regionStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8778/8923] Replayed ZetaRamp.Final
+info: src/ZetaRamp/Final.lean:133:0: 'ZetaRamp.rampPNT_of_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8779/8923] Replayed ZetaClassical.RampPNT
+info: src/ZetaClassical/RampPNT.lean:12:0: 'ZetaClassical.rampPNTStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8782/8923] Replayed CenteredRampDensity
+info: src/CenteredRampDensity.lean:98:0: 'RiemannReduction.DivisorBand.deficit_eq_centered_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8783/8923] Replayed VShortShift
+info: src/VShortShift.lean:131:0: 'RiemannReduction.DivisorBand.normalized_margin_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/VShortShift.lean:132:0: 'RiemannReduction.DivisorBand.positive_after_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/VShortShift.lean:133:0: 'RiemannReduction.DivisorBand.negative_after_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8786/8923] Replayed PrimeWindow
+info: src/PrimeWindow.lean:177:0: 'ThetaTransfer.compactDifference_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimeWindow.lean:178:0: 'ThetaTransfer.rh_of_prime_sign_windows' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimeWindow.lean:179:0: 'ThetaTransfer.zeta_zeroFree_of_prime_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimeWindow.lean:180:0: 'ThetaTransfer.no_small_primePower_windows_of_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimeWindow.lean:181:0: 'ThetaTransfer.prime_deficit_on_every_late_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimeWindow.lean:182:0: 'ThetaTransfer.zeroFree_of_prime_sign_windows' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8789/8923] Replayed BandQuadrature
+info: src/BandQuadrature.lean:253:0: 'RiemannReduction.DivisorBand.log_band_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8790/8923] Replayed FineBandQuadrature
+info: src/FineBandQuadrature.lean:273:0: 'RiemannReduction.DivisorBand.FineQuadrature.log_band_error_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8791/8923] Replayed MobiusTail
+info: src/MobiusTail.lean:146:0: 'RiemannReduction.DivisorBand.residual_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusTail.lean:147:0: 'RiemannReduction.DivisorBand.small_divisors_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusTail.lean:148:0: 'RiemannReduction.DivisorBand.tail_margin_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8793/8923] Replayed MobiusAbsolute
+info: src/MobiusAbsolute.lean:206:0: 'RiemannReduction.DivisorBand.absolute_tail_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusAbsolute.lean:207:0: 'RiemannReduction.DivisorBand.absolute_remaining_after_removal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8794/8923] Replayed MobiusPair
+info: src/MobiusPair.lean:250:0: 'RiemannReduction.DivisorBand.paired_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusPair.lean:251:0: 'RiemannReduction.DivisorBand.peel_pairs_at_square_root_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusPair.lean:252:0: 'RiemannReduction.DivisorBand.paired_absolute_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8796/8923] Replayed PrimeGrid
+info: src/PrimeGrid.lean:178:0: 'RiemannReduction.PrimeGrid.passes_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimeGrid.lean:179:0: 'RiemannReduction.PrimeGrid.block_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8798/8923] Replayed PositivePole
+info: src/PositivePole.lean:105:0: 'RiemannReduction.prime_power_recovers' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8799/8923] Replayed SquareSampling
+info: src/SquareSampling.lean:357:0: 'RiemannReduction.PrimeGrid.cofinal_square_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareSampling.lean:358:0: 'RiemannReduction.PrimeGrid.cofinal_fifth_square_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareSampling.lean:359:0: 'RiemannReduction.PrimeGrid.cofinal_fifth_lower_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareSampling.lean:360:0: 'RiemannReduction.PrimeGrid.whole_sqrt_blocks_of_square_samples' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquareSampling.lean:361:0: 'RiemannReduction.PrimeGrid.whole_fifth_blocks_of_square_samples' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8800/8923] Replayed MarginCurvature
+info: src/MarginCurvature.lean:142:0: 'RiemannReduction.PrimeGrid.margin_affine_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8801/8923] Replayed TurningPoints
+info: src/TurningPoints.lean:54:0: 'RiemannReduction.PrimeGrid.block_passes_iff_endpoints_and_double_primes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8802/8923] Replayed MarginVariation
+info: src/MarginVariation.lean:66:0: 'RiemannReduction.PrimeGrid.margin_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8803/8923] Replayed FifthWindows
+info: src/FifthWindows.lean:164:0: 'RiemannReduction.PrimeGrid.rh_of_doubled_prime_sqrt_windows' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FifthWindows.lean:165:0: 'RiemannReduction.PrimeGrid.rh_of_fifth_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FifthWindows.lean:166:0: 'RiemannReduction.PrimeGrid.rh_of_square_sqrt_windows' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8804/8923] Replayed BandSpectrum
+info: src/BandSpectrum.lean:62:0: 'ThetaTransfer.bandMellin_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/BandSpectrum.lean:63:0: 'ThetaTransfer.bandMellin_ne_zero_in_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8805/8923] Replayed FifthSpectrum
+info: src/FifthSpectrum.lean:153:0: 'RiemannReduction.PrimeGrid.fifth_through_ten_pow_eighteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FifthSpectrum.lean:154:0: 'RiemannReduction.PrimeGrid.off_line_term_norm_tends_to_infinity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/FifthSpectrum.lean:189:0: 'RiemannReduction.PrimeGrid.normalized_loss_of_spectral_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FifthSpectrum.lean:190:0: 'RiemannReduction.PrimeGrid.fifth_at_every_scale_of_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8806/8923] Replayed SquareConstant
+info: src/SquareConstant.lean:102:0: 'RiemannReduction.PrimeGrid.rh_of_any_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareConstant.lean:103:0: 'RiemannReduction.PrimeGrid.every_sequence_has_a_block_dependent_allowance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquareConstant.lean:104:0: 'RiemannReduction.PrimeGrid.every_late_block_has_a_violation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareConstant.lean:105:0: 'RiemannReduction.PrimeGrid.square_bound_iff_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareConstant.lean:106:0: 'RiemannReduction.PrimeGrid.hundred_on_blocks_through_3200000' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8807/8923] Replayed MobiusBlocks
+info: src/MobiusBlocks.lean:68:0: 'RiemannReduction.DivisorBand.signed_tail_blocks_iff_square_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/MobiusBlocks.lean:69:0: 'RiemannReduction.DivisorBand.rh_of_signed_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusBlocks.lean:70:0: 'RiemannReduction.DivisorBand.remainder_blocks_iff_square_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8808/8923] Replayed SquareMeanRemainder
+info: src/SquareMeanRemainder.lean:169:0: 'RiemannReduction.DivisorBand.unequal_pair_sign_of_remainder_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquareMeanRemainder.lean:170:0: 'RiemannReduction.DivisorBand.centered_tent_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareMeanRemainder.lean:171:0: 'RiemannReduction.DivisorBand.centered_plus_unpaired' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareMeanRemainder.lean:172:0: 'RiemannReduction.DivisorBand.centered_square_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8811/8923] Replayed WholeTailPNT
+info: src/WholeTailPNT.lean:86:0: 'RiemannReduction.DivisorBand.whole_tail_pnt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/WholeTailPNT.lean:87:0: 'RiemannReduction.DivisorBand.pnt_allowance_per_root_grows' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8813/8923] Replayed SquareContribution
+info: src/SquareContribution.lean:104:0: 'RiemannReduction.square_gap_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8814/8923] Replayed MobiusPrimeBalance
+info: src/MobiusPrimeBalance.lean:210:0: 'RiemannReduction.DivisorBand.prime_bin_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/MobiusPrimeBalance.lean:211:0: 'RiemannReduction.DivisorBand.primes_compensated_by_semiprimes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8815/8923] Replayed LargePrimePackets
+info: src/LargePrimePackets.lean:190:0: 'RiemannReduction.DivisorBand.absolute_prime_groups_superlinear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/LargePrimePackets.lean:191:0: 'RiemannReduction.DivisorBand.large_prime_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/LargePrimePackets.lean:192:0: 'RiemannReduction.DivisorBand.absolute_prime_groups_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8816/8923] Replayed PrimePacketMean
+info: src/PrimePacketMean.lean:204:0: 'RiemannReduction.DivisorBand.all_integer_group_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimePacketMean.lean:205:0: 'RiemannReduction.DivisorBand.prime_sampling_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimePacketMean.lean:206:0: 'RiemannReduction.DivisorBand.prime_group_profile_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8820/8923] Replayed SquarePairDiagonal
+info: src/SquarePairDiagonal.lean:104:0: 'RiemannReduction.DivisorBand.square_diagonal_diverges' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquarePairDiagonal.lean:105:0: 'RiemannReduction.DivisorBand.late_pair_sign_of_remainder_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8821/8923] Replayed SquarePairBlock
+info: src/SquarePairBlock.lean:66:0: 'RiemannReduction.DivisorBand.late_pair_sign_of_fractional_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquarePairBlock.lean:67:0: 'RiemannReduction.DivisorBand.cofinal_pair_sign_of_remainder_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8822/8923] Replayed SmoothedZeroBound
+info: src/SmoothedZeroBound.lean:104:0: 'RiemannReduction.ZetaWindow.smoothed_psi_on_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8823/8923] Replayed SquareSignedConverse
+info: src/SquareSignedConverse.lean:48:0: 'RiemannReduction.DivisorBand.square_root_bound_of_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareSignedConverse.lean:49:0: 'RiemannReduction.DivisorBand.square_blocks_iff_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareSignedConverse.lean:50:0: 'RiemannReduction.DivisorBand.signed_tail_blocks_iff_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquareSignedConverse.lean:51:0: 'RiemannReduction.DivisorBand.unpaired_blocks_iff_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8824/8923] Replayed SquarePairConverse
+info: src/SquarePairConverse.lean:51:0: 'RiemannReduction.DivisorBand.remainder_budget_iff_rh_of_short_block_theorem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquarePairConverse.lean:52:0: 'RiemannReduction.DivisorBand.remainder_energy_of_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquarePairConverse.lean:53:0: 'RiemannReduction.DivisorBand.cofinal_remainder_budget_of_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8825/8923] Replayed SquarePairGrowth
+info: src/SquarePairGrowth.lean:69:0: 'RiemannReduction.DivisorBand.late_centered_energy_le_two_remainders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquarePairGrowth.lean:70:0: 'RiemannReduction.DivisorBand.remainder_growth_of_centered_growth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquarePairGrowth.lean:71:0: 'RiemannReduction.DivisorBand.bounded_short_remainder_ratio_iff_rh' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8826/8923] Replayed SquarePairSharpEnergy
+info: src/SquarePairSharpEnergy.lean:146:0: 'RiemannReduction.DivisorBand.centered_pair_error_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SquarePairSharpEnergy.lean:147:0: 'RiemannReduction.DivisorBand.square_blocks_of_remainder_plus_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/SquarePairSharpEnergy.lean:148:0: 'RiemannReduction.DivisorBand.remainder_energy_five_hundred_twenty_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8832/8923] Replayed RampWindowEquivalence
+info: src/RampWindowEquivalence.lean:816:0: 'DirectRampEquivalence.zeta_zeroFree_of_ordinaryWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/RampWindowEquivalence.lean:817:0: 'DirectRampEquivalence.zeta_zeroFree_of_ordinaryWindowUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/RampWindowEquivalence.lean:818:0: 'DirectRampEquivalence.abs_rampG_le_of_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/RampWindowEquivalence.lean:819:0: 'DirectRampEquivalence.ordinaryWindow_three_way_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/RampWindowEquivalence.lean:820:0: 'DirectRampEquivalence.rh_iff_ordinaryWindowUnit_above_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8833/8923] Replayed ArchiveFreeBadMeasure
+info: src/ArchiveFreeBadMeasure.lean:786:0: 'ArchiveFreeBadMeasure.near_full_measure_every_window_mathlib' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/ArchiveFreeBadMeasure.lean:787:0: 'ArchiveFreeBadMeasure.zeroFree_of_subfull_bad_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8835/8923] Replayed ThirdSignedPrime
+info: src/ThirdSignedPrime.lean:119:0: 'RiemannReduction.ThirdPrime.remainder_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ThirdSignedPrime.lean:120:0: 'RiemannReduction.ThirdPrime.remainder_third_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ThirdSignedPrime.lean:121:0: 'RiemannReduction.ThirdPrime.rh_iff_third_signed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ThirdSignedPrime.lean:122:0: 'RiemannReduction.ThirdPrime.all_squares_of_negative_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8844/8923] Replayed EighthStripMass
+info: src/EighthStripMass.lean:134:0: 'RiemannReduction.ZetaWindow.Eighth.finite_inverse_square_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8845/8923] Replayed StripIntegral
+info: src/StripIntegral.lean:114:0: 'RiemannReduction.ZetaWindow.Strip.smoothed_psi_of_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8846/8923] Replayed StripDeficit
+info: src/StripDeficit.lean:37:0: 'RiemannReduction.DivisorBand.FourthMass.deficit_of_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8847/8923] Replayed StripQuarticBudget
+info: src/StripQuarticBudget.lean:68:0: 'RiemannReduction.DivisorBand.FourthMass.quartic_bound_of_strip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/StripQuarticBudget.lean:69:0: 'RiemannReduction.DivisorBand.FourthMass.quartic_bound_of_xu_sang' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8848/8923] Replayed ContactQuartic
+info: src/ContactQuartic.lean:55:0: 'RiemannReduction.DivisorBand.FourthMass.Contact.mass_at_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/ContactQuartic.lean:56:0: 'RiemannReduction.DivisorBand.FourthMass.Contact.mass_below_2986767' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8857/8923] Replayed BalancedSquareKernel
+info: src/BalancedSquareKernel.lean:153:0: 'RiemannReduction.BalancedSquare.balanced_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/BalancedSquareKernel.lean:154:0: 'RiemannReduction.BalancedSquare.rh_iff_lower_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8859/8923] Replayed FiniteFifthBlocks
+info: src/FiniteFifthBlocks.lean:55:0: 'RiemannReduction.DivisorBand.FiniteFifth.all_real_of_majorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/FiniteFifthBlocks.lean:56:0: 'RiemannReduction.DivisorBand.FiniteFifth.integer_and_square_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8888/8923] Replayed ArchiveFreeWindowTo298
+info: src/ArchiveFreeWindowTo298.lean:608:0: 'DirectRampEquivalence.archiveFree_moment_of_ordinaryWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ArchiveFreeWindowTo298.lean:609:0: 'DirectRampEquivalence.archiveFree_moment_of_window_087' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ArchiveFreeWindowTo298.lean:610:0: 'DirectRampEquivalence.dirichlet_stencil_nonvanishing_large_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/ArchiveFreeWindowTo298.lean:611:0: 'DirectRampEquivalence.stenciled_poleData_of_nonzero_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/ArchiveFreeWindowTo298.lean:612:0: 'DirectRampEquivalence.stenciled_zero_re_le_of_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8889/8923] Replayed Crossley.DyadicRampReconstruction
+info: src/Crossley/DyadicRampReconstruction.lean:790:0: 'Crossley.rampS_dyadic_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:791:0: 'Crossley.rampS_top_down_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:792:0: 'Crossley.rampG_dyadic_reconstruction_bottom' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:793:0: 'Crossley.rampG_top_down_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:794:0: 'Crossley.rampG_dyadic_reconstruction_two_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:795:0: 'Crossley.rampG_dyadic_dirichlet_green' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:796:0: 'Crossley.rampG_dyadic_power_bound_of_dirichlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/DyadicRampReconstruction.lean:797:0: 'Crossley.good_rampG_point_on_late_windows' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8890/8923] Replayed Crossley.WindowCriterion
+info: src/Crossley/WindowCriterion.lean:24:0: 'Crossley.window_criterion_zeroFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/Crossley/WindowCriterion.lean:25:0: 'Crossley.window_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8891/8923] Replayed DirectRampConvexity
+info: src/DirectRampConvexity.lean:310:0: 'DirectRampConvexity.rampS_convexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/DirectRampConvexity.lean:311:0: 'DirectRampConvexity.rampG_chord_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/DirectRampConvexity.lean:312:0: 'DirectRampConvexity.rampG_le_max_add_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/DirectRampConvexity.lean:313:0: 'DirectRampConvexity.ordinaryWindow_of_finite_mesh' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/DirectRampConvexity.lean:314:0: 'DirectRampConvexity.sum_rampS_div_eq_log_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8896/8923] Replayed FourthPowerSparseRH
+info: src/FourthPowerSparseRH.lean:632:0: 'FourthPowerSparseRH.general_power_zeroFree_of_sparse_failures' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/FourthPowerSparseRH.lean:633:0: 'FourthPowerSparseRH.zeroFree_of_fourthPower_sparse_failures' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FourthPowerSparseRH.lean:634:0: 'FourthPowerSparseRH.rh_iff_fourthPower_sparse_failures' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FourthPowerSparseRH.lean:635:0: 'FourthPowerSparseRH.archiveFree_298_of_fourthPower_sparse_failures' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8897/8923] Replayed FourthPrimeTail
+info: src/FourthPrimeTail.lean:187:0: 'FourthPrimeTail.ramp_tail_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/FourthPrimeTail.lean:188:0: 'FourthPrimeTail.rh_iff_cofinal_prime_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8899/8923] Replayed FrequencyAudit
+info: src/FrequencyAudit.lean:31:0: score_is_paid_loss | reachable 41958 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: weighted_score_eq_outstanding | reachable 41964 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: weak_le_weighted | reachable 7063 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: weighted_le_levels | reachable 8006 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: score_polynomial | reachable 62299 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: weak_iff_outstanding | reachable 62336 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: rh_iff_frequency | reachable 66351 | RH definition true | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: all_thresholds_of_contact | reachable 65595 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: low_thresholds | reachable 41040 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: cut_absolute | reachable 41546 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: high_negative | reachable 41564 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: band_split | reachable 32626 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: band_driving_hit | reachable 41627 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: row_uniform | reachable 41542 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: pair_square | reachable 32581 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: near_absolute | reachable 41557 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: far_positive_at_hit | reachable 41572 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: frequency_from_far | reachable 41575 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: discarded_identity | reachable 43003 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: score_distance_subpower | reachable 43056 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: identical_large_hits_up_to_factor_two | reachable 43058 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/FrequencyAudit.lean:31:0: positive_annulus_at_hit | reachable 43036 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: finite_annulus | reachable 43042 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: finite_annulus_blocks | reachable 43043 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: finite_frequency_annulus | reachable 43048 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: short_frequency_iff | reachable 43317 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: quotient_sign_fold | reachable 33122 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: halved_quotient | reachable 15822 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: halved_dyadic_band | reachable 15885 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: odd_band_driving_hit | reachable 42120 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/FrequencyAudit.lean:31:0: frequency_odd_witness | reachable 42125 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+ℹ [8902/8923] Replayed HalvingAudit
+info: src/HalvingAudit.lean:37:0: clipped_parity_net_sums | reachable 33277 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: consecutive_net_endpoints | reachable 33136 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: kernel_at_larger_quotient | reachable 41371 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: halved_net_size | reachable 41545 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: adverse_layer_zero | reachable 32575 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: adverse_layer_positive_depth | reachable 32577 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: first_layer_difference | reachable 33279 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: joint_alarm_factorization | reachable 10952 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: clipped_sign_event_exact | reachable 33293 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: clipped_frequency_of_overlap | reachable 33303 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: retained_dyadic_reversal | reachable 41999 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: retained_selected_layer | reachable 42002 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: event_subpower_from_height | reachable 41112 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: grouped_layer_mass_bounds | reachable 33322 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: odd_frequency_of_grouped_halvings | reachable 42583 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/HalvingAudit.lean:37:0: clipped_net_sum_terms | reachable 32567 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: double_row_at_next_depth | reachable 15824 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: layer_divisors_lt_double | reachable 15920 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: doubled_divisor_absent | reachable 15926 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: odd_double_cancels_across_depths | reachable 33091 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/HalvingAudit.lean:37:0: deep_layer_frequency | reachable 41881 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: deep_layer_subpower | reachable 41943 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: odd_frequency_of_residual_signed | reachable 42603 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/HalvingAudit.lean:37:0: first_layer_forces_clipped | reachable 33298 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: score_to_early_or_first | reachable 42214 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: score_frequency_first_layer | reachable 42218 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: deep_first_layer_cover | reachable 32581 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: clipped_divisor_quotient_range | reachable 16641 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: quarter_shallow_first_iff | reachable 32705 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: first_frequency_of_shallow | reachable 41955 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: first_frequency_of_residual | reachable 41960 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: event_mass_below_one | reachable 41044 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: residual_first_real_thresholds | reachable 41306 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: first_shell_event_eventually | reachable 32763 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: first_shell_shared_iff | reachable 32768 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: clipped_net_of_ordinary_prefix | reachable 41892 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: adverse_layer_height | reachable 41965 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: selected_log_frequency_of_cubic_contour | reachable 42174 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/HalvingAudit.lean:37:0: selected_four_of_cubic_contour | reachable 42179 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: selected_layer_frequency_of_prefix_exponent | reachable 42272 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/HalvingAudit.lean:37:0: shared_layers_of_prefix_exponent | reachable 42276 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/HalvingAudit.lean:37:0: rh_of_residual_signed | reachable 66519 | RH definition true | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: rh_of_first_layer_frequency | reachable 66467 | RH definition true | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: rh_of_residual_first | reachable 66503 | RH definition true | axioms [propext, Classical.choice, Quot.sound]
+info: src/HalvingAudit.lean:37:0: rh_of_full_first_shells | reachable 66520 | RH definition true | axioms [propext, Classical.choice, Quot.sound]
+ℹ [8907/8923] Replayed OddAudit
+info: src/OddAudit.lean:37:0: odd_moment_recurrence | reachable 9712 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_prefix_recurrence | reachable 9716 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_prefix_sqrt | reachable 13445 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: quotient_rows_interval | reachable 15994 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: cofactor_interval | reachable 3510 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_abel_bound | reachable 8701 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: event_split | reachable 33147 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: event_mass_split | reachable 33150 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: prefix_event_frequency | reachable 42412 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: full_odd_above_four | reachable 42417 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: score_le_separated | reachable 33204 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: geometric_of_separated | reachable 32710 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: geometric_covers | reachable 33300 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: geometric_frequency_four | reachable 42135 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: finite_mertens_sqrt | reachable 12424 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: second_quotient_finite_blocks | reachable 42107 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: FiniteOdd.exact_counts | reachable 2653 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: FiniteOdd.exact_numerators | reachable 2685 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: FiniteOdd.all_dyadic | reachable 32617 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: finite_allocated_frequency | reachable 33232 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: signed_kernel_quotient_cells | reachable 40921 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: signed_kernel_variation_bound | reachable 41639 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: complete_odd_dyadic | reachable 42861 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: complete_odd_fourth_dilation | reachable 42862 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: complete_odd_finite_difference | reachable 42871 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_of_tail | reachable 42455 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: both_signed_dyadic_of_mertens | reachable 42493 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_of_finite_prefix | reachable 42740 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_of_cofinal_mertens | reachable 42806 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_of_mertens_power | reachable 42808 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_subpower_of_mertens_subpower | reachable 42809 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_hurst_blocks | reachable 42862 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: complete_odd_real_halve | reachable 42485 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: complete_odd_of_prime_envelope | reachable 43000 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: complete_odd_finite_blocks | reachable 43021 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: both_signed_of_local_oscillations | reachable 41998 | RH definition false | axioms [propext,
+ Classical.choice,
+ Quot.sound]
+info: src/OddAudit.lean:37:0: normalized_event_of_odd_alarm | reachable 42017 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_of_local_events | reachable 42023 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: band_parity_net_sums | reachable 33269 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: band_alarm_signed_net | reachable 33288 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: score_signed_net_witness | reachable 42202 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: odd_frequency_of_signed_nets | reachable 33297 | RH definition false | axioms [propext, Classical.choice, Quot.sound]
+info: src/OddAudit.lean:37:0: rh_of_odd_event_bounds | reachable 66393 | RH definition true | axioms [propext, Classical.choice, Quot.sound]
+ℹ [8908/8923] Replayed SparseProducts
+info: src/SparseProducts.lean:33:0: 'RiemannReduction.PrimeGrid.rh_of_integer_product_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SparseProducts.lean:46:0: 'RiemannReduction.PrimeGrid.rh_of_doubled_prime_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/SparseProducts.lean:73:0: 'RiemannReduction.PrimeGrid.mixed_blocks_of_not_rh' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8909/8923] Replayed ReciprocalPrimeCutoff
+info: src/ReciprocalPrimeCutoff.lean:58:0: 'FourthPrimeTail.split_at_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ReciprocalPrimeCutoff.lean:59:0: 'FourthPrimeTail.bandDeficit_eq_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/ReciprocalPrimeCutoff.lean:60:0: 'FourthPrimeTail.comparison_of_oscillation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8910/8923] Replayed PrimePeriodAverage
+info: src/PrimePeriodAverage.lean:171:0: 'PrimePeriodAverage.iterate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimePeriodAverage.lean:172:0: 'PrimePeriodAverage.ramp_midpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimePeriodAverage.lean:173:0: 'PrimePeriodAverage.residue_centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/PrimePeriodAverage.lean:174:0: 'PrimePeriodAverage.residue_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8918/8923] Replayed TentWindow
+info: src/TentWindow.lean:51:0: 'TentWindow.rh_of_fixed_prime_power_allowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentWindow.lean:52:0: 'TentWindow.rh_of_bounded_signed_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8919/8923] Replayed TentMean
+info: src/TentMean.lean:55:0: 'TentWindow.rh_of_subpower_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMean.lean:100:0: 'TentWindow.rh_of_signed_negative_part_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8920/8923] Built TentDigamma (24s)
+info: src/TentDigamma.lean:404:0: 'TentDigamma.hasSum_digammaTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentDigamma.lean:405:0: 'TentDigamma.norm_digamma_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentDigamma.lean:406:0: 'TentDigamma.norm_digammaTerm_one_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentDigamma.lean:407:0: 'TentDigamma.logDeriv_Gammaℝ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentDigamma.lean:408:0: 'TentDigamma.hasSum_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8921/8923] Built TentMassIdentity (12s)
+info: src/TentMassIdentity.lean:2263:0: 'TentMassIdentity.integral_line_eq_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2264:0: 'TentMassIdentity.rect_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2265:0: 'TentMassIdentity.hasSum_zeros_eq_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2266:0: 'TentMassIdentity.integral_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2267:0: 'TentMassIdentity.hasSum_zeros_tentDephased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2268:0: 'TentMassIdentity.hasSum_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2269:0: 'TentMassIdentity.line_mass_bound_and_equality_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: src/TentMassIdentity.lean:2270:0: 'TentMassIdentity.widthTwo_margin_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8922/8923] Built PortAudit.Endpoints (232s)
+info: src/PortAudit/Endpoints.lean:49:0: AUDIT ThetaTransfer.rh_of_prime_sign_windows: reachable 61307; project 47, compat 17, independent 105, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.PrimeGrid.rh_of_integer_product_blocks: reachable 61445; project 86, compat 15, independent 105, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.PrimeGrid.rh_of_doubled_prime_blocks: reachable 61480; project 120, compat 15, independent 105, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.DivisorBand.square_blocks_iff_rh: reachable 65396; project 179, compat 24, independent 340, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.DivisorBand.FourthMass.rh_iff_subpower_quartic_budget: reachable 65265; project 238, compat 24, independent 340, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_iff_frequency: reachable 66351; project 530, compat 27, independent 428, Sanftenberg 110, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_of_uniform_shell_score: reachable 66550; project 716, compat 27, independent 428, Sanftenberg 110, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_of_far_gap: reachable 66610; project 768, compat 27, independent 428, Sanftenberg 110, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_of_uniform_first_moments: reachable 66559; project 725, compat 27, independent 428, Sanftenberg 110, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_iff_same_block_shell_frequency: reachable 67013; project 922, compat 27, independent 428, Sanftenberg 111, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_iff_same_block_far_gap: reachable 67073; project 974, compat 27, independent 428, Sanftenberg 111, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT RiemannReduction.ShortTail.LossFrequency.rh_iff_cofinal_shell_first_moment: reachable 67022; project 931, compat 27, independent 428, Sanftenberg 111, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT DirectRampEquivalence.rh_iff_ordinaryWindowUnit_above_half: reachable 61908; project 16, compat 0, independent 139, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT FourthPowerSparseRH.rh_iff_fourthPower_sparse_failures: reachable 62291; project 97, compat 0, independent 139, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT FourthPrimeTail.rh_iff_cofinal_prime_tail: reachable 62446; project 137, compat 0, independent 139, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT FourthPrimeTail.comparison_of_oscillation: reachable 19038; project 43, compat 0, independent 1, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT PrimePeriodAverage.residue_average: reachable 9464; project 17, compat 0, independent 0, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT PrimeCentreMean.rh_iff_all_smallPrimeCentreBudget: reachable 68335; project 110, compat 14, independent 141, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT PrimeCentreMean.Sparse.rh_iff_subpowerFourthSamples: reachable 62281; project 126, compat 14, independent 141, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT TentWidthTwoMargin.widthTwoMargin_bounds_d14: reachable 27445; project 35, compat 0, independent 0, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT TentZeroBudget.line_mass_bound_and_equality: reachable 17264; project 19, compat 0, independent 0, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT TentMassIdentity.line_mass_bound_and_equality_zeta: reachable 64731; project 194, compat 0, independent 133, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT TentWindow.rh_of_bounded_signed_remainder: reachable 61066; project 36, compat 17, independent 105, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+AUDIT TentWindow.rh_of_signed_negative_part_mean: reachable 61063; project 35, compat 16, independent 105, Sanftenberg 0, archive/stub 0; axioms [propext, Classical.choice, Quot.sound]
+Build completed successfully (8923 jobs).
+exit 0 at 2026-11-23T09:30:03.935480+00:00

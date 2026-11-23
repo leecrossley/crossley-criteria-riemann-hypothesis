@@ -1,0 +1,46 @@
+\usepackage[hmargin=1in,vmargin=0.85in]{geometry}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+
+% Keep words and inline identifiers whole when setting a paragraph.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\renewcommand{\texttt}[1]{\mbox{\ttfamily #1}}
+
+\newcommand{\PaperParagraphs}{\setlength{\parskip}{9pt plus 1pt minus 1pt}}
+\AtBeginDocument{\PaperParagraphs}
+
+\AtBeginEnvironment{longtable}{\footnotesize}
+
+\usepackage{float}
+\floatplacement{figure}{H}
+
+\usepackage{needspace}
+\pretocmd{\section}{\needspace{8\baselineskip}}{}{}
+\pretocmd{\subsection}{\needspace{4\baselineskip}}{}{}
+
+% Bibliographic details for readers who save the PDF.
+\AtBeginDocument{\hypersetup{pdftitle={The Crossley Criteria: A Mathematical Proof of the Riemann Hypothesis, Verified in Lean},pdfauthor={Lee Crossley},pdfsubject={DOI 10.5281/zenodo.24466908. Version 1.0, 23rd November 2026. Lee Crossley, ORCID 0009-0009-2264-2219. https://github.com/leecrossley/crossley-criteria-riemann-hypothesis},pdfkeywords={Riemann hypothesis, analytic number theory, prime numbers, Lean, Mathlib},pdfcreator={},pdfproducer={}}}
+
+% Lean sources use Unicode symbols that Latin Modern Mono lacks.
+\setmonofont{Menlo}[Scale=MatchLowercase]
+
+% The write-up writes < and > as \lt and \gt, which GitHub needs and LaTeX lacks.
+\providecommand{\lt}{<}
+\providecommand{\gt}{>}
+
+\newcommand{\PaperCover}[7]{%
+  \thispagestyle{empty}\vspace*{\fill}
+  \begin{center}
+  {\LARGE\bfseries #1\par}\vspace{0.7em}
+  {\Large\bfseries #2\par}\vspace{2.4em}
+  {\large #3\par}\vspace{0.35em}
+  {\small #4\par}\vspace{0.2em}
+  {\small #5\par}\vspace{1.2em}
+  {\normalsize #6\par}\vspace{0.3em}
+  {\normalsize #7\par}
+  \end{center}
+  \vspace*{\fill}\clearpage
+}

@@ -1,0 +1,89 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The Crossley Criteria: A Mathematical Proof of the Riemann Hypothesis, Verified in Lean"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+    orcid: "https://orcid.org/0009-0009-2264-2219"
+type: software
+doi: "10.5281/zenodo.24466908"
+date-released: "2026-11-23"
+abstract: "A proof of the Riemann hypothesis, checked in Lean 4 against Mathlib's statement RiemannHypothesis. A theta-lift window for the prime-power ramp, from Levent Alpöge's geometric construction as specialised by David Sanftenberg and Lee Crossley, is turned into the absence of zeros by a Landau theorem proved from Mathlib alone, and the functional equation completes the proof."
+version: 1.0.0
+license: CC-BY-4.0
+repository-code: "https://github.com/leecrossley/crossley-criteria-riemann-hypothesis"
+keywords:
+  - Riemann hypothesis
+  - Lean
+  - Mathlib
+  - formal verification
+  - analytic number theory
+  - prime numbers
+  - Möbius function
+preferred-citation:
+  type: report
+  doi: "10.5281/zenodo.24466908"
+  title: "The Crossley Criteria: A Mathematical Proof of the Riemann Hypothesis, Verified in Lean"
+  authors:
+    - family-names: Crossley
+      given-names: Lee
+      orcid: "https://orcid.org/0009-0009-2264-2219"
+  year: 2026
+  date-published: "2026-11-23"
+  version: "1.0"
+  url: "https://github.com/leecrossley/crossley-criteria-riemann-hypothesis/blob/v1.0/paper/crossley-criteria-riemann-hypothesis.pdf"
+references:
+  - type: software
+    title: "An ordinary-prime window criterion for the Riemann hypothesis"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "v1.0.4"
+    date-released: "2026-11-21"
+    doi: "10.5281/zenodo.24412819"
+    repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/v1.0.4"
+  - type: software
+    title: "Window criteria for the Riemann hypothesis"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "v1.1.1"
+    date-released: "2026-11-21"
+    doi: "10.5281/zenodo.24421600"
+    repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/v1.1.1"
+  - type: software
+    title: "A fourth-power criterion for the negative part of a Möbius sum"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "fourth-power-mobius-v1.0.0"
+    date-released: "2026-11-21"
+    doi: "10.5281/zenodo.24426583"
+    repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/fourth-power-mobius-v1.0.0"
+  - type: software
+    title: "A fourth-power criterion for the negative part of a Möbius sum"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "fourth-power-mobius-v1.0.1"
+    date-released: "2026-11-21"
+    doi: "10.5281/zenodo.24428032"
+    repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/fourth-power-mobius-v1.0.1"
+  - type: software
+    title: "Prime-counting errors on square samples"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "square-block-median-v1.0.3"
+    date-released: "2026-11-22"
+    doi: "10.5281/zenodo.24438940"
+    repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/square-block-median-v1.0.3"
+  - type: software
+    title: "A delayed-difference window criterion for Dirichlet families"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "v1.0.4"
+    date-released: "2026-11-21"
+    doi: "10.5281/zenodo.24410863"
+    repository-code: "https://github.com/leecrossley/dirichlet-window-transfer/tree/v1.0.4"
