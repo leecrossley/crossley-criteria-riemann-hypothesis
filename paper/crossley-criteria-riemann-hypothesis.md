@@ -288,7 +288,7 @@ Here $U(n^2)$ samples the remainder at $x=n^4$. With $s=-1$ a sample only counts
 
 *Proof.* Under RH, $|D(n^4)|\ll n^2$, so each summand is $O(1/n)$ and $L_s(m)=O(\log m)$. That's (2), and (3) follows because any positive power of $m$ eventually beats $\log m$.
 
-For the converse, suppose RH fails, and pick a zero $\rho$ with $\mathrm{Re}\,\rho$ close to the supremum of $\mathrm{Re}\,s$ over all zeros $s$. The explicit formula then gives excursions of both signs on intervals $[x,x+x^{1-h}]$, of normalised height $x^{4h}$ for some $`h\gt 0`$. Each such interval inside $[m^4,m^8]$ contains about $x^{1/4-2h}$ fourth powers, whose $n^{-3}$-weighted contribution exceeds $m^h$ up to a factor $2(1+2\log m)$. So $`L_s(m)\gt m^{j}`$ on every late block for some fixed $`j\gt 0`$, contradicting (3).
+For the converse, suppose RH fails, and pick a zero $\rho$ with $`\mathrm{Re}\,\rho`$ close to the supremum of $`\mathrm{Re}\,s`$ over all zeros $s$. The explicit formula then gives excursions of both signs on intervals $[x,x+x^{1-h}]$, of normalised height $x^{4h}$ for some $`h\gt 0`$. Each such interval inside $[m^4,m^8]$ contains about $x^{1/4-2h}$ fourth powers, whose $n^{-3}$-weighted contribution exceeds $m^h$ up to a factor $2(1+2\log m)$. So $`L_s(m)\gt m^{j}`$ on every late block for some fixed $`j\gt 0`$, contradicting (3).
 
 *Attribution.* [First release](https://doi.org/10.5281/zenodo.24426583) and [revised release](https://doi.org/10.5281/zenodo.24428032). David Sanftenberg's related criterion for positive shortfalls in the prime count gives a parallel route at $s=+1$.
 
@@ -418,7 +418,7 @@ For a fixed $\delta$, I need blocks starting arbitrarily far out on which one co
 
 In Lean, `ConvertedThetaWindows.full_shell_298` gives the shell inequality at $`\delta=2.98`$. It uses Theorem 1.2 at $`87/100`$. The same window gives $`\zeta(s)\ne0`$ for $`\mathrm{Re}\,s\ge349/400`$, `ConvertedThetaWindows.zero_free_349_400`. *Lean, unconditional, from the archive.*
 
-$2.98$ is just under the $2.98677$ that Bebel's strip gives. Proving the inequality at $\delta=2.98$, and nothing more, would, by the first-shell converse, rule out zeros of $\zeta$ to the right of the line $\mathrm{Re}\,s=349/400=0.8725$. In Lean that converse assumes the localised oscillation theorem of Kaczorowski and Pintz.
+$2.98$ is just under the $2.98677$ that Bebel's strip gives. Proving the inequality at $\delta=2.98$, and nothing more, would, by the first-shell converse, rule out zeros of $\zeta$ to the right of the line $`\mathrm{Re}\,s=349/400=0.8725`$. In Lean that converse assumes the localised oscillation theorem of Kaczorowski and Pintz.
 
 For the calculation at $\delta=2.98$ I took Bebel's two zero-free estimates as hypotheses in Lean, which lets me bound the sum over the following ranges.
 
@@ -474,9 +474,9 @@ with $C_\theta$ depending only on $\theta$. *Paper proof*, from the Euler produc
 
 (b) *Short runs.* If every index strictly between $u$ and $v$ is high, then $`v/u\lt 126/125`$ for all large $m$.
 
-(c) *One interior run decides.* Let $R_e(m)$ be the largest $P_\theta(u,v)$ over $`m\lt u\lt v\lt M`$ with low endpoints, high samples between them and $v-u\ge\lfloor m^{2-e}\rfloor$. Then $\log(1+R_e(m))/\log m\to8\max(0,\Theta-\theta)$, where $\Theta$ is the supremum of $\mathrm{Re}\,\rho$ over the zeros $\rho$. So a subpower bound on $R_e(m)$ on arbitrarily late blocks is equivalent to $\zeta(s)\ne0$ for $`\mathrm{Re}\,s\gt\theta`$, and would give the benchmark at $\delta=2.98$.
+(c) *One interior run decides.* Let $R_e(m)$ be the largest $P_\theta(u,v)$ over $`m\lt u\lt v\lt M`$ with low endpoints, high samples between them and $v-u\ge\lfloor m^{2-e}\rfloor$. Then $\log(1+R_e(m))/\log m\to8\max(0,\Theta-\theta)$, where $\Theta$ is the supremum of $`\mathrm{Re}\,\rho`$ over the zeros $\rho$. So a subpower bound on $R_e(m)$ on arbitrarily late blocks is equivalent to $\zeta(s)\ne0$ for $`\mathrm{Re}\,s\gt\theta`$, and would give the benchmark at $\delta=2.98$.
 
-*Paper proof*, from the explicit formula, the published finite-height verification and zero-density estimates, with no zero-free strip and no theta lifts. I've checked the discrete estimate for the mass of one run in Lean, with the analytic input as a hypothesis. It bounds that mass by $(1+L)d+u^{4(\beta-\theta)}d^{27/10}$, but that's only small if you already know the zeros $\rho$ satisfy $\beta=\mathrm{Re}\,\rho$ with $\beta$ near $\theta$. So the upper edge is fine. I'd still need a bound on one complete interior run, and that's equivalent to the zero-free line at $\theta=0.8724$.
+*Paper proof*, from the explicit formula, the published finite-height verification and zero-density estimates, with no zero-free strip and no theta lifts. I've checked the discrete estimate for the mass of one run in Lean, with the analytic input as a hypothesis. It bounds that mass by $(1+L)d+u^{4(\beta-\theta)}d^{27/10}$, but that's only small if you already know the zeros $\rho$ satisfy $`\beta=\mathrm{Re}\,\rho`$ with $\beta$ near $\theta$. So the upper edge is fine. I'd still need a bound on one complete interior run, and that's equivalent to the zero-free line at $\theta=0.8724$.
 
 **Proposition 11.6 (Opposite pairs).** On arbitrarily late blocks there are three squarefree composite cofactors $b,b+h,b+2h$ in the first shell with the same residue modulo $16\cdot571\cdot599$ and the same local field coefficients, whose two neighbouring pairs have the same shift and opposite Möbius products. Together they contribute at most $3/200$ of the total sample weight throughout $199m^2/200\le n\le m^2$. *Lean, unconditional.* The same construction shows you can't predict the sign of a pair from this local data alone. I can't bound the rest of the correlations.
 
