@@ -7,6 +7,10 @@ authors:
     orcid: "https://orcid.org/0009-0009-2264-2219"
 type: software
 doi: "10.5281/zenodo.24466908"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24466907"
+    description: "Concept DOI for all versions"
 date-released: "2026-11-23"
 abstract: "A proof of the Riemann hypothesis, checked in Lean 4 against Mathlib's statement RiemannHypothesis. A theta-lift window for the prime-power ramp, from Levent Alpöge's geometric construction as specialised by David Sanftenberg and Lee Crossley, is turned into the absence of zeros by a Landau theorem proved from Mathlib alone, and the functional equation completes the proof."
 version: 1.0.0
@@ -23,6 +27,10 @@ keywords:
 preferred-citation:
   type: report
   doi: "10.5281/zenodo.24466908"
+  identifiers:
+    - type: doi
+      value: "10.5281/zenodo.24466907"
+      description: "Concept DOI for all versions"
   title: "The Crossley Criteria: A Mathematical Proof of the Riemann Hypothesis, Verified in Lean"
   authors:
     - family-names: Crossley
@@ -41,6 +49,10 @@ references:
     version: "v1.0.4"
     date-released: "2026-11-21"
     doi: "10.5281/zenodo.24412819"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.24410878"
+        description: "Concept DOI for all versions"
     repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/v1.0.4"
   - type: software
     title: "Window criteria for the Riemann hypothesis"
@@ -50,6 +62,10 @@ references:
     version: "v1.1.1"
     date-released: "2026-11-21"
     doi: "10.5281/zenodo.24421600"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.24410878"
+        description: "Concept DOI for all versions"
     repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/v1.1.1"
   - type: software
     title: "A fourth-power criterion for the negative part of a Möbius sum"
@@ -59,6 +75,10 @@ references:
     version: "fourth-power-mobius-v1.0.0"
     date-released: "2026-11-21"
     doi: "10.5281/zenodo.24426583"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.24410878"
+        description: "Concept DOI for all versions"
     repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/fourth-power-mobius-v1.0.0"
   - type: software
     title: "A fourth-power criterion for the negative part of a Möbius sum"
@@ -68,6 +88,10 @@ references:
     version: "fourth-power-mobius-v1.0.1"
     date-released: "2026-11-21"
     doi: "10.5281/zenodo.24428032"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.24410878"
+        description: "Concept DOI for all versions"
     repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/fourth-power-mobius-v1.0.1"
   - type: software
     title: "Prime-counting errors on square samples"
@@ -77,6 +101,10 @@ references:
     version: "square-block-median-v1.0.3"
     date-released: "2026-11-22"
     doi: "10.5281/zenodo.24438940"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.24410878"
+        description: "Concept DOI for all versions"
     repository-code: "https://github.com/leecrossley/prime-window-rh-criterion/tree/square-block-median-v1.0.3"
   - type: software
     title: "A delayed-difference window criterion for Dirichlet families"
@@ -86,4 +114,8 @@ references:
     version: "v1.0.4"
     date-released: "2026-11-21"
     doi: "10.5281/zenodo.24410863"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.24410862"
+        description: "Concept DOI for all versions"
     repository-code: "https://github.com/leecrossley/dirichlet-window-transfer/tree/v1.0.4"
